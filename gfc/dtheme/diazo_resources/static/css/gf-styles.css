@@ -28,7 +28,17 @@ body {
   z-index: 10;
 }
 
+/* FORMS */
+.formHelp {
+  display: block;
+  font-weight: 500;
+}
 
+.formQuestion {
+  margin-top: .5em;
+}
+
+.label {color=666;}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */

@@ -76,7 +76,6 @@
          targets in your theme.
              <after css:theme="#content" css:content="#visual-portal-wrapper" />
     -->
-    <replace css:theme-children="#content" css:content-children="#content" />
 
     <!-- Global navigation -->
     <replace css:content-children='#portal-globalnav'
@@ -102,6 +101,12 @@
           src="++resource++plone.app.widgets.js"></script>
     </before>
 
+
+    <replace css:theme-children="#left-column-content"
+        css:content-children="#portal-column-one" />
+
+    <replace css:theme-children="#content"
+        css:content-children="#content" />
 
   </rules>
 
