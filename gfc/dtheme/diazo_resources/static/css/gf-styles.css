@@ -38,7 +38,25 @@ body {
   margin-top: .5em;
 }
 
-.label {color=666;}
+#broadcaster .formQuestion.label {
+  border-radius: 0.25em 0.25em 0.25em 0.25em;
+  color: #333;
+  display: inline;
+  font-size: 100%;
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 0em;
+  text-align: left;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+#broadcaster_1{
+  margin-top: 1.5em;
+}
+
+#archetypes-fieldname-broadcaster {
+ margin-top: 1em;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
