@@ -108,16 +108,40 @@
 
       <div class="col-lg-7" id="content">
         <div id="main-content-header">
-          <h2>Main body content</h2>
+          <h2>Gluten-Free Caf&eacute; Pilot Episode</h2>
         </div>
+        <div><!--[description]--></div>
         <div id="main-content-body">
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
-            eget lacinia odio sem nec elit. Cras mattis consectetur purus sit
-            amet fermentum. Fusce dapibus, tellus ac cursus commodo,
-            tortor mauris condimentum nibh.</p>
+          <script type="text/javascript"
+              src="./static/jwplayer/jwplayer.js"></script>
+          <script type="text/javascript">
+            jwplayer.key="CYkrTkT44429GQnhjCUslTiHc7zDW/nw6oBZFw==";</script>
+
+          <div id="show-box">
+            <div id="theShow">
+              <a href="http://media.mandsworks.com/gfc/gfc_pilot.mp4">
+                Watch this stream...</a></div>
+
+
+            <script type="text/javascript">
+              jwplayer("theShow").setup({
+                sources: [{
+                  file: "rtmp://media.mandsworks.com:1935/gfc/mp4:gfc_pilot.mp4"
+                },{
+                  file: "http://media.mandsworks.com/gfc/mp4:gfc_pilot.mp4/playlist.m3u8",
+                  fallback: false
+              }],
+                rtmp: {
+                  bufferlength: 3
+                },
+                image: "static/img/gfc-video-filler-logo.jpg"
+              });
+            </script>
+
+
+          </div>
         </div>
-        <p><a class="btn btn-default" href="#">View details <span
-            class="glyphicon glyphicon-chevron-right"></span></a></p>
+        <p> </p>
       </div>
       <!-- /.col-lg-7 -->
 

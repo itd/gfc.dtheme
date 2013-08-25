@@ -96,7 +96,8 @@ body {
 
 
 
-/* MARKETING CONTENT
+
+/* MAIN CONTENT
 -------------------------------------------------- */
 
 /* Pad the edges of the mobile views a bit */
@@ -118,6 +119,20 @@ body {
   margin-right: 10px;
 }
 
+/* Portlets
+-------------------------- */
+#left-column h2 .glyphicon {
+  font-size: 70%;
+  padding: 0 0 0 0.5em;
+  position: relative;
+  top: 0.2em;
+}
+
+/* footer
+---------------------------- */
+footer {
+  padding: 0 1em;
+}
 
 /* Featurettes
 ------------------------- */
@@ -150,6 +165,11 @@ body {
 }
 
 
+/* video stuff
+------------------------------------------- */
+#theShow_wrapper {
+  text-align: center;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */

@@ -6,14 +6,16 @@
 
   <!-- The default theme, used for standard Plone web pages -->
   <theme href="home.html" css:if-content=".section-front-page" />
+  <theme href="video.html" if-path="/video" />
   <theme href="index.html" css:if-content="#visual-portal-wrapper" />
+
   <notheme if-path="@@manage-viewlets" />
   <notheme if="$ajax_load" />
 
   <!-- Apply the following rules to standard Plone pages -->
   <rules css:if-content="#visual-portal-wrapper">
 
-    <theme href="index.html" />
+
     <!-- Add meta tags -->
     <drop css:theme="meta[http-equiv='Content-Type']" />
     <drop css:content="meta[name='viewport']" />
@@ -101,13 +103,27 @@
           src="++resource++plone.app.widgets.js"></script>
     </before>
 
-
+    <!-- left and right columns -->
+    <drop css:theme-children="#left-column"
+        css:if-not-content="#portal-column-two" />
     <replace css:theme-children="#left-column-content"
         css:content-children="#portal-column-one" />
+    <drop css:theme-children="#right-column"
+        css:if-not-content="#portal-column-two" />
+    <replace css:theme-children="#right-column-content"
+        css:content-children="#portal-column-two" />
 
+    <rules if-not-path="/video">
     <replace css:theme-children="#content"
         css:content-children="#content" />
+    </rules>
+
+
 
   </rules>
+
+  <!--<rules css:if-content=".section-video">-->
+
+
 
 </rules>
