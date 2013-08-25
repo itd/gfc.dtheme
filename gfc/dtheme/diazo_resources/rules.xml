@@ -83,7 +83,7 @@
     <replace css:content-children='#portal-globalnav'
         css:theme-children='ul.nav.navbar-nav' />
 
-    <!--plone.app.toolbar magic-->
+    <!--plone.app.toolbar magic
     <before theme-children="/html/body"
         content="//div[@data-iframe='plone-toolbar']" />
     <before theme-children="/html/head">
@@ -102,6 +102,7 @@
       <script type="text/javascript"
           src="++resource++plone.app.widgets.js"></script>
     </before>
+    -->
 
     <!-- left and right columns -->
     <drop css:theme-children="#left-column"

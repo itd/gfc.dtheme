@@ -10,7 +10,7 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="GFC Cafe Plone Diazo Theme"
+      title="Gluten-Free Cafe Plone Diazo Theme"
       directory="profiles/default"
       description="GFC Cafe Plone Diazo Theme"
       provides="Products.GenericSetup.interfaces.EXTENSION"

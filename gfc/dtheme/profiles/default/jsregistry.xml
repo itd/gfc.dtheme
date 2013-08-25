@@ -2,6 +2,7 @@
 <!-- This file holds the setup configuration for the portal_javascripts tool.
      -->
 <object name="portal_javascripts">
+  <!--
   <javascript
       id="++resource++gfc.dtheme/static/bs/js/bootstrap.min.js"
       cacheable="False" compression="safe" cookable="False"
@@ -28,7 +29,7 @@
       id="++resource++gfc.dtheme/static/jwplayer/jwplayer.js"
       cacheable="False" compression="safe" cookable="False"
       enabled="True" expression=""  inline="False"/>
-
+-->
 
 
  <!-- Javascript files that will be registered with the

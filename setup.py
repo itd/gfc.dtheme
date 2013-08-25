@@ -5,7 +5,7 @@ version = '1.0'
 
 setup(name='gfc.dtheme',
       version=version,
-      description="Diazo Theme Packfor plone 4.3.1 site",
+      description="Diazo Theme for plone 4.3.1 site",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from

@@ -1,6 +1,8 @@
 gfc.dtheme Installation
 -----------------------
 
+**A Gluten-Free Cafe Plone Diazo Theme!**
+
 To install gfc.dtheme using zc.buildout and the plone.recipe.zope2instance
 recipe to manage your project, you can do this:
 
@@ -11,7 +13,7 @@ recipe to manage your project, you can do this:
     eggs =
         ...
         gfc.dtheme
-       
+
 * Re-run buildout, e.g. with:
 
     $ ./bin/buildout
