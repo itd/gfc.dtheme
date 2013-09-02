@@ -131,11 +131,10 @@
 
             <script type="text/javascript">
               jwplayer("gfcpilot").setup({
-                sources: [{
-                  file: "http://media.mandsworks.com/gfc/smil:gfcpilot.smil"
-                },{
-                  file: "rtmp://media.mandsworks.com:1935/gfc/mp4:gfc_pilot.mp4"
-                }],
+                sources: [
+                  {file: "rtmp://media.mandsworks.com:1935/gfc/mp4:gfc_pilot.mp4"},
+                  {file: "http://media.mandsworks.com/gfc/smil:gfcpilot.smil"},
+                ],
                 rtmp: {
                   bufferlength: 3
                 },
