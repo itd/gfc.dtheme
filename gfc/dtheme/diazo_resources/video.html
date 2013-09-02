@@ -122,20 +122,22 @@
                 poster="/static/img/gfc-video-filler-logo.jpg"
                 width="480"
                 >
-              <source src="/videos/gfcpilot_964.mp4"
-                  type="video/mp4">
-              <source src="/videos/gfc_pilot.webm"
-                  type="video/webm">
+              <!--<source src="/videos/gfcpilot_964.mp4"-->
+                  <!--type="video/mp4">-->
+              <!--<source src="/videos/gfcpilot.webm"-->
+                  <!--type="video/webm"/>-->
+              <source src="http://media.mandsworks.com/smil:gfcpilot.smil/jwplayer.smil"/>
             </video>
-            <!--<script type="text/javascript">-->
-              <!--jwplayer("gfcpilot").setup({-->
-                <!--modes: [-->
-                  <!--{ type: 'html5' },-->
-                  <!--{ type: 'flash', src: '/static/jwplayer/player.swf' }-->
-                <!--],-->
-                <!--image: "static/img/gfc-video-filler-logo.jpg"-->
-              <!--});-->
-            <!--</script>-->
+            <script type="text/javascript">
+              jwplayer("gfcpilot").setup({
+                sources: [
+                  //{ file: "rtmp://media.mandsworks.com:1935/gfc/mp4:gfc_pilot.mp4" },
+                  { file: 'http://media.mandsworks.com/smil:gfcpilot.smil/jwplayer.smil' },
+                  //{ file: '/videos/gfcpilot_964.mp4' },
+                ],
+                image: "/static/img/gfc-video-filler-logo.jpg"
+              });
+            </script>
           </div><!-- show-box-->
 
           </div><!--main-content-body-->
@@ -168,16 +170,17 @@
 <footer>
   <p class="pull-right"><a href="#">Back to top</a></p>
 
-  <p>Broadway Digital<br>
+  <p>Broadway Digital / Onc&eacute;<br>
     1014 East Broadway<br>
     Louisville, KY 40204<br>
   </p>
-  <p>Contact: Jeff Sexton<br>
-    502-262-4874
+  <p>Contact: <a href="mailto:theglutenfreecafejeff@gmail.com">Jeff Sexton</a><br>
+    502-540-5301
   </p>
 </footer>
 <div id="portal-colophon">
-  <p>&copy; 2013 <a href="http://broadwaydigital.us" target="_blank">BroadwayDigital.us</a></p>
+  <p>&copy; 2013 <a href="http://broadwaydigital.us" target="_blank">BroadwayDigital.us / Onc&eacute;</a>
+  </p>
 </div>
 
 
