@@ -19,6 +19,11 @@
   <!--[if lt IE 9]>
   <script src="static/bs/assets/js/html5shiv.js"></script>
   <script src="static/bs/assets/js/respond.min.js"></script>
+  <script type="text/javascript"
+      src="/static/jwplayer/jwplayer.js"></script>
+  <script type="text/javascript">
+    jwplayer.key="CYkrTkT44429GQnhjCUslTiHc7zDW/nw6oBZFw==";</script>
+
   <![endif]-->
 </head>
 
@@ -109,35 +114,36 @@
         <div><!--[description]--></div>
 
         <div id="main-content-body">
-          <script type="text/javascript"
-              src="./static/jwplayer/jwplayer.js"></script>
-          <script type="text/javascript">
-            jwplayer.key="CYkrTkT44429GQnhjCUslTiHc7zDW/nw6oBZFw==";</script>
 
           <div id="show-box">
             <video id="gfcpilot"
                 controls
-                height="270"
+                width="480" height="360"
                 preload="none"
                 poster="/static/img/gfc-video-filler-logo.jpg"
-                width="480"
                 >
-              <source src="/_videos/gfcpilot_964.mp4"
-                  type="video/mp4">
-              <source src="/_videos/gfcpilot.webm"
-                  type="video/webm"/>
+              <source src="/_videos/gfcpilot_964.mp4" type="video/mp4"
+                  controls />
+              <source src="/_videos/gfcpilot.webm" type="video/webm"
+                  controls />
               <source src="http://media.mandsworks.com/gfc/smil:gfcpilot.smil/jwplayer.smil"/>
             </video>
+
             <script type="text/javascript">
               jwplayer("gfcpilot").setup({
-                sources: [
-                  //{ file: "rtmp://media.mandsworks.com:1935/gfc/mp4:gfc_pilot.mp4" },
-                  { file: 'http://media.mandsworks.com/gfc/smil:gfcpilot.smil/jwplayer.smil' },
-                  //{ file: '/videos/gfcpilot_964.mp4' },
-                ],
-                image: "/static/img/gfc-video-filler-logo.jpg"
+                sources: [{
+                  file: "http://media.mandsworks.com/gfc/smil:gfcpilot.smil"
+                },{
+                  file: "rtmp://media.mandsworks.com:1935/gfc/mp4:gfc_pilot.mp4"
+                }],
+                rtmp: {
+                  bufferlength: 3
+                },
+                image: "static/img/gfc-video-filler-logo.jpg"
               });
             </script>
+
+
           </div><!-- show-box-->
 
           </div><!--main-content-body-->

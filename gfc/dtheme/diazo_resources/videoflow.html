@@ -2,8 +2,40 @@
 <html>
 <head>
   <title></title>
+  <!-- 1. jquery library -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+  <!-- 2. flowplayer -->
+  <script src="//releases.flowplayer.org/5.4.3/flowplayer.min.js"></script>
+
+  <!-- 3. skin -->
+  <link rel="stylesheet" href="//releases.flowplayer.org/5.4.3/skin/minimalist.css">
 </head>
 <body>
+
+<script>
+  $(".myplayer").flowplayer({
+
+    // option 1
+    swf: '/swf/flowplayer.swf',
+
+    // option 2
+    rtmp: 'rtmp://s3b78u0kbtx79q.cloudfront.net/cfx/st'
+
+  });
+</script>
+
+
+<div class="flowplayer is-splash"
+    style="background:#777 url(/path/to/splash.jpg) no-repeat;">
+  <video preload="none">
+    <source type="application/x-mpegurl" src="http://mydomain.com/intro.m3u8">
+    <source type="video/webm" src="http://mydomain.com/intro.webm">
+    <source type="video/mp4" src="http://mydomain.com/intro.mp4">
+    <source type="video/ogg" src="http://mydomain.com/intro.ogv">
+  </video>
+</div>
+
 
 </body>
 </html>
