@@ -131,7 +131,12 @@ body {
 /* footer
 ---------------------------- */
 footer {
-  padding: 0 1em;
+  padding: 1em;
+  border-top: 1px solid #ccc;
+  margin-top: 2em;
+}
+#portal-colophon p {
+  text-align: center;
 }
 
 /* Featurettes
