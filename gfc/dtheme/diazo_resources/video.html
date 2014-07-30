@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-  <meta content="utf-8" http-equiv="encoding">
-
   <title>Gluten Free Caf&eacute;</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Bootstrap -->
@@ -22,12 +19,12 @@
   <!--[if lt IE 9]>
   <script src="static/bs/assets/js/html5shiv.js"></script>
   <script src="static/bs/assets/js/respond.min.js"></script>
-  <![endif]-->
   <script type="text/javascript"
-      src="static/jwplayer/jwplayer.js"></script>
-  <script type="text/javascript">jwplayer.key="CYkrTkT44429GQnhjCUslTiHc7zDW/nw6oBZFw==";</script>
+      src="/static/jwplayer/jwplayer.js"></script>
+  <script type="text/javascript">
+    jwplayer.key="CYkrTkT44429GQnhjCUslTiHc7zDW/nw6oBZFw==";</script>
 
-
+  <![endif]-->
 </head>
 
 <body style="">
@@ -117,42 +114,43 @@
 
       <div class="col-lg-7" id="content">
         <div id="main-content-header">
-          <h2>Gluten-Free Caf&eacute; Sample Pilot Episode</h2>
+          <h2>Gluten-Free Caf&eacute; Pilot Episode</h2>
         </div>
         <div><!--[description]--></div>
 
         <div id="main-content-body">
 
+          <div id="show-box">
+            <video id="gfcpilot"
+                controls
+                width="480" height="360"
+                preload="none"
+                poster="/static/img/gfc-video-filler-logo.jpg"
+                >
+              <source src="/MEDIA/gfc_pilot.mp4" type="video/mp4"
+                  controls />
+              <source src="/MEDIA/gfc_pilot.webm" type="video/webm"
+                  controls />
+              <!-- source src="http://media.mandsworks.com/gfc/smil:gfcpilot.smil/jwplayer.smil"/ -->
+            </video>
 
-<div id="show-box">loading video...</div>
-<div id="gfcPlayerDiv">loading player...</div>
+            <!--
+            <script type="text/javascript">
+              jwplayer("gfcpilot").setup({
+                sources: [
+                  {file: "rtmp://media.mandsworks.com:1935/gfc/mp4:gfc_pilot.mp4"},
+                  {file: "http://media.mandsworks.com/gfc/smil:gfcpilot.smil"},
+                ],
+                rtmp: {
+                  bufferlength: 3
+                },
+                image: "static/img/gfc-video-filler-logo.jpg"
+              });
+            </script>
 
-<script type="text/javascript">
-var MOVIE = "gfc_pilot.mp4";
-var SERVER = "media.choplogic.com";
-jwplayer("gfcPlayerDiv").setup({
-    height: 400, 
-    width: 720,
-  sources: [
-    {
-      file: "rtmp://" + SERVER + "/gfc/" + MOVIE,
-    }, 
-    {
-      file: "http://" + SERVER + "/gfc/" + "mp4:" + MOVIE + "/playlist.m3u8"
-    },
+           -->
 
-  ],
-    rtmp: {
-      bufferlength: 3
-    },
-    image: "static/img/gfc-video-filler-logo.jpg"
- 
-});
-</script>
-
-
-
-
+          </div><!-- show-box-->
 
           </div><!--main-content-body-->
         </div><!-- /.col-lg-7 -->
@@ -190,7 +188,7 @@ jwplayer("gfcPlayerDiv").setup({
   </p>
 </footer>
 <div id="portal-colophon">
-  <p>&copy; 2014 Onc&eacute;
+  <p>&copy; 2013 Onc&eacute;
   </p>
 </div>
 
